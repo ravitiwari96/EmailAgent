@@ -10,3 +10,22 @@ This project automates the process of sending emails to multiple recipients, che
 - **Status Logging:** Record the status of each email (Sent, No Reply, Reply Received) with timestamps in an Excel log file.
 - **Streamlit Interface:** Interact with a user-friendly Streamlit interface for managing recipients and controlling the email pipeline.
 
+
+
+## Requirements
+- **Run Environment:**  .\env\Scripts\activate
+
+- **Before running the application, install the required Python packages:**
+
+  pip install -r requirements.txt
+
+
+
+
+
+  ## Setup
+- **Create a "credentials.json" File:** To authenticate the Gmail API, you'll need a credentials.json file. Follow the steps below to obtain the credentials:
+- Visit the Google Developers Console.
+- Create a new project and enable the Gmail API.
+- Create OAuth 2.0 credentials and download the credentials.json file.
+- Place this file in the root directory of your project.
