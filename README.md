@@ -3,6 +3,7 @@
 This project automates the process of sending emails to multiple recipients, checking for replies, and logging the results. The pipeline leverages Gmail API for sending and receiving emails while utilizing a Word document as a source for email templates. The status of each email is logged in an Excel file, including information such as whether the email was sent, if a reply was received, and timestamps for each action.
 
 
+
 ## Features
 - **Send Automated Emails:** Automate the process of sending emails to multiple recipients.
 - **Customizable Email Templates:** Load and use email templates from a Word document with dynamic placeholders.
@@ -46,6 +47,19 @@ This project automates the process of sending emails to multiple recipients, che
 3. **Log Files**
 - The email log file **(Email Logging.xlsx)** will be created/updated in the project directory. It logs all actions, including sending emails, receiving replies, and timestamps.
 
+
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/442ba704-554e-4b63-a5f5-39b139c5e80f" />
+
+
+
+<img width="599" alt="image" src="https://github.com/user-attachments/assets/997ff203-ee17-442b-888d-22c4eb10a8f8" />
+
+
+
+
+![Uploading image.png…]()
+
+
 ## Example Workflow
 - Upload an email template.
 - Authenticate with Gmail.
@@ -58,3 +72,8 @@ This project automates the process of sending emails to multiple recipients, che
 
 - **Error: FileNotFoundError for Log File:**
   The log file will be created if it does not exist. Ensure the application has write permissions to the directory where the log file is stored.
+
+
+
+
+
