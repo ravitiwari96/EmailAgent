@@ -1,4 +1,4 @@
-# Email Automation Pipeline
+# Email Automation 
 
 This project automates the process of sending emails to multiple recipients, checking for replies, and logging the results. The pipeline leverages Gmail API for sending and receiving emails while utilizing a Word document as a source for email templates. The status of each email is logged in an Excel file, including information such as whether the email was sent, if a reply was received, and timestamps for each action.
 
