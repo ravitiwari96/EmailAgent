@@ -28,8 +28,8 @@ This project automates the process of sending emails to multiple recipients, che
 - Create a Word document (.docx) containing the email templates.
 -  Structure each email template like this:
 
-**Email_subject: <subject>  
-  Email_body: <body>**  
+  **Email_subject: <subject>  
+    Email_body: <body>**  
 
 - Customize placeholders **(e.g., {{company_name}})** in the subject and body. These will be dynamically replaced during execution.
 
