@@ -54,9 +54,6 @@ This project automates the process of sending emails to multiple recipients, che
 
 <img width="599" alt="image" src="https://github.com/user-attachments/assets/997ff203-ee17-442b-888d-22c4eb10a8f8" />
 
-
-
-
 ![Uploading image.png…]()
 
 
