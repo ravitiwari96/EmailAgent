@@ -15,17 +15,46 @@ This project automates the process of sending emails to multiple recipients, che
 ## Requirements
 - **Run Environment:**  .\env\Scripts\activate
 
-- **Before running the application, install the required Python packages:**
+- **Before running the application, install the required Python packages:** pip install -r requirements.txt
 
-  pip install -r requirements.txt
-
-
-
-
-
-  ## Setup
-- **Create a "credentials.json" File:** To authenticate the Gmail API, you'll need a credentials.json file. Follow the steps below to obtain the credentials:
+## Setup
+ **Create a "credentials.json" File:** To authenticate the Gmail API, you'll need a credentials.json file. Follow the steps below to obtain the credentials:
 - Visit the Google Developers Console.
 - Create a new project and enable the Gmail API.
 - Create OAuth 2.0 credentials and download the credentials.json file.
 - Place this file in the root directory of your project.
+
+## Prepare the Email Templates
+- Create a Word document (.docx) containing the email templates.
+-  Structure each email template like this:
+
+**Email_subject: <subject>  
+  Email_body: <body>**  
+
+- Customize placeholders **(e.g., {{company_name}})** in the subject and body. These will be dynamically replaced during execution.
+
+## Usage
+1. **Start the Streamlit App**
+- **Run the following command to launch the Streamlit app:** streamlit run email_agent.py  
+
+2. **Interact with the Interface**
+- **Upload Email Template:** Upload your Word document containing email templates.
+- **Authenticate Gmail:** Click the "Authenticate Gmail" button to authenticate using your credentials.json.
+- **Add Recipients:** Add recipients by entering their email addresses and associated company names.
+- **Start Email Pipeline:** Click the "Start Email Pipeline" button to send emails and check for replies.
+
+3. **Log Files**
+- The email log file **(Email Logging.xlsx)** will be created/updated in the project directory. It logs all actions, including sending emails, receiving replies, and timestamps.
+
+## Example Workflow
+- Upload an email template.
+- Authenticate with Gmail.
+- Add recipients.
+- Start the email pipeline to send emails, wait for replies, and log all actions.
+
+## Troubleshooting
+- **Error: HttpError During Gmail API Interaction:**
+  Ensure your Gmail API credentials are correctly configured, and the Gmail API is enabled in your Google Cloud project.
+
+- **Error: FileNotFoundError for Log File:**
+  The log file will be created if it does not exist. Ensure the application has write permissions to the directory where the log file is stored.
