@@ -47,6 +47,9 @@ This project automates the process of sending emails to multiple recipients, che
 3. **Log Files**
 - The email log file **(Email Logging.xlsx)** will be created/updated in the project directory. It logs all actions, including sending emails, receiving replies, and timestamps.
 
+<img width="622" alt="image" src="https://github.com/user-attachments/assets/5f3be8e0-4ba2-43dd-9a39-d2083fef40a2" />
+
+
 
 <img width="608" alt="image" src="https://github.com/user-attachments/assets/442ba704-554e-4b63-a5f5-39b139c5e80f" />
 
